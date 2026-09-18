@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tb2-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#tb2-bg)" />
+  <text x="600" y="100" text-anchor="middle" fill="#10b981" font-family="system-ui, sans-serif" font-size="28" font-weight="bold">TBConnect — Offline-First Architecture</text>
+  
+  <!-- Boxes for architecture diagram -->
+  <rect x="100" y="200" width="260" height="340" rx="16" fill="#1f2937" stroke="#374151" stroke-width="2" />
+  <text x="230" y="250" text-anchor="middle" fill="#60a5fa" font-family="system-ui, sans-serif" font-weight="bold" font-size="20">Flutter Client</text>
+  <text x="230" y="285" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14">Local SQLite DB</text>
+  <text x="230" y="320" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14">Offline Mutation Queue</text>
+  <text x="230" y="355" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14">AES-256 Local Encrypt</text>
+  <rect x="130" y="420" width="200" height="50" rx="8" fill="#10b981" fill-opacity="0.2" stroke="#10b981" />
+  <text x="230" y="452" text-anchor="middle" fill="#10b981" font-family="system-ui, sans-serif" font-weight="bold" font-size="14">Mobile Device (Android)</text>
+
+  <!-- Flow arrows -->
+  <path d="M 380 370 L 480 370" stroke="#10b981" stroke-width="4" marker-end="url(#arrow)" stroke-dasharray="6,6" />
+  <text x="430" y="350" text-anchor="middle" fill="#10b981" font-family="system-ui, sans-serif" font-size="12">TLS Sync</text>
+
+  <rect x="490" y="200" width="260" height="340" rx="16" fill="#1f2937" stroke="#10b981" stroke-width="2" />
+  <text x="620" y="250" text-anchor="middle" fill="#10b981" font-family="system-ui, sans-serif" font-weight="bold" font-size="20">Edge Sync Hub</text>
+  <text x="620" y="285" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14">Supabase Functions</text>
+  <text x="620" y="320" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14">Conflict Resolver</text>
+  <text x="620" y="355" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14">Row-Level Security (RLS)</text>
+  <rect x="520" y="420" width="200" height="50" rx="8" fill="#3b82f6" fill-opacity="0.2" stroke="#3b82f6" />
+  <text x="620" y="452" text-anchor="middle" fill="#60a5fa" font-family="system-ui, sans-serif" font-weight="bold" font-size="14">Cloud Edge Serverless</text>
+
+  <!-- Flow arrows -->
+  <path d="M 770 370 L 870 370" stroke="#10b981" stroke-width="4" />
+
+  <rect x="880" y="200" width="260" height="340" rx="16" fill="#1f2937" stroke="#374151" stroke-width="2" />
+  <text x="1010" y="250" text-anchor="middle" fill="#a78bfa" font-family="system-ui, sans-serif" font-weight="bold" font-size="20">Next.js Web Portal</text>
+  <text x="1010" y="285" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14">Admin &amp; Clinic Dashboard</text>
+  <text x="1010" y="320" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14">Real-time Subscriptions</text>
+  <text x="1010" y="355" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14">Public Health Reports</text>
+  <rect x="910" y="420" width="200" height="50" rx="8" fill="#8b5cf6" fill-opacity="0.2" stroke="#8b5cf6" />
+  <text x="1010" y="452" text-anchor="middle" fill="#c4b5fd" font-family="system-ui, sans-serif" font-weight="bold" font-size="14">Desktop &amp; Clinic Web</text>
+</svg>

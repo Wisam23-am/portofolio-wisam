@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mg-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#mg-bg)" />
+  <rect x="60" y="50" width="1080" height="600" rx="16" fill="#064e3b" fill-opacity="0.6" stroke="#059669" stroke-width="1.5" />
+  <text x="100" y="95" fill="#34d399" font-family="system-ui, sans-serif" font-weight="bold" font-size="16">🌿 MeshGuard IoT Gateway &amp; Edge Console</text>
+  
+  <rect x="100" y="130" width="320" height="480" rx="12" fill="#022c22" stroke="#059669" />
+  <text x="120" y="170" fill="#a7f3d0" font-family="system-ui, sans-serif" font-weight="bold" font-size="14">Connected Edge Nodes (64)</text>
+  <text x="120" y="210" fill="#6ee7b7" font-family="monospace" font-size="12">ESP32-Sens-01: 24.2°C / 62% RH</text>
+  <text x="120" y="250" fill="#6ee7b7" font-family="monospace" font-size="12">ESP32-Sens-02: 25.1°C / 59% RH</text>
+  <text x="120" y="290" fill="#6ee7b7" font-family="monospace" font-size="12">Relay-Module-01: Active [ON]</text>
+  <text x="120" y="330" fill="#6ee7b7" font-family="monospace" font-size="12">PowerMeter-01: 420W [Normal]</text>
+
+  <rect x="460" y="130" width="640" height="480" rx="12" fill="#022c22" stroke="#059669" />
+  <text x="490" y="170" fill="#a7f3d0" font-family="system-ui, sans-serif" font-weight="bold" font-size="14">MQTT Real-time Telemetry &amp; Actuator Control</text>
+  <path d="M 490 450 Q 600 320, 750 360 T 950 280 T 1050 310" fill="none" stroke="#34d399" stroke-width="3" />
+  <text x="490" y="550" fill="#6ee7b7" font-family="monospace" font-size="12">WireGuard encrypted tunnel :: Broker Uptime 180 Days :: Sub-15ms Latency</text>
+</svg>

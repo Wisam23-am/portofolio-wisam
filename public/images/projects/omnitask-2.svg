@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="omni-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#omni-bg)" />
+  <rect x="60" y="50" width="1080" height="600" rx="16" fill="#1e293b" stroke="#475569" stroke-width="1.5" />
+  <circle cx="95" cy="80" r="6" fill="#ef4444" />
+  <circle cx="115" cy="80" r="6" fill="#f59e0b" />
+  <circle cx="135" cy="80" r="6" fill="#10b981" />
+  <text x="170" y="85" fill="#f8fafc" font-family="system-ui, sans-serif" font-weight="bold" font-size="14">OmniTask Flow — Sprint Board</text>
+
+  <!-- Kanban Columns -->
+  <rect x="90" y="120" width="310" height="500" rx="12" fill="#0f172a" stroke="#334155" />
+  <text x="110" y="155" fill="#94a3b8" font-family="system-ui, sans-serif" font-weight="bold" font-size="14">TO DO (3)</text>
+  <rect x="105" y="175" width="280" height="90" rx="8" fill="#1e293b" stroke="#334155" />
+  <text x="120" y="205" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13">Refactor auth JWT refresh</text>
+  <text x="120" y="240" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11">Backend • P1</text>
+
+  <rect x="440" y="120" width="310" height="500" rx="12" fill="#0f172a" stroke="#334155" />
+  <text x="460" y="155" fill="#fbbf24" font-family="system-ui, sans-serif" font-weight="bold" font-size="14">IN PROGRESS (2)</text>
+  <rect x="455" y="175" width="280" height="90" rx="8" fill="#1e293b" stroke="#f59e0b" />
+  <text x="470" y="205" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13">Fuzzy Search Command Bar</text>
+  <text x="470" y="240" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="11">Frontend • High</text>
+
+  <rect x="790" y="120" width="310" height="500" rx="12" fill="#0f172a" stroke="#334155" />
+  <text x="810" y="155" fill="#10b981" font-family="system-ui, sans-serif" font-weight="bold" font-size="14">DONE (12)</text>
+  <rect x="805" y="175" width="280" height="90" rx="8" fill="#1e293b" stroke="#10b981" />
+  <text x="820" y="205" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13">Optimistic state mutations</text>
+  <text x="820" y="240" fill="#10b981" font-family="system-ui, sans-serif" font-size="11">✓ Shipped</text>
+</svg>

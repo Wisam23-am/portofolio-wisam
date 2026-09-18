@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="np1-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#np1-bg)" />
+  <rect x="60" y="50" width="1080" height="600" rx="16" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+  <circle cx="95" cy="80" r="6" fill="#ef4444" />
+  <circle cx="115" cy="80" r="6" fill="#f59e0b" />
+  <circle cx="135" cy="80" r="6" fill="#10b981" />
+  <text x="170" y="85" fill="#38bdf8" font-family="monospace" font-size="13">⚡ NetPulse :: Distributed Telemetry Node Monitor [v2.4.0]</text>
+  
+  <!-- Server Nodes Grid -->
+  <rect x="90" y="120" width="310" height="150" rx="12" fill="#1e293b" stroke="#3b82f6" />
+  <text x="110" y="150" fill="#60a5fa" font-family="system-ui, sans-serif" font-weight="bold" font-size="14">Edge-Node-Tokyo-01</text>
+  <text x="110" y="180" fill="#94a3b8" font-family="monospace" font-size="12">RTT: 14.2ms | Loss: 0.0%</text>
+  <text x="110" y="205" fill="#94a3b8" font-family="monospace" font-size="12">CPU: 24% | RAM: 1.1GB/4GB</text>
+  <text x="110" y="235" fill="#10b981" font-family="system-ui, sans-serif" font-weight="bold" font-size="12">● HEALTHY - 99.99% Uptime</text>
+
+  <rect x="430" y="120" width="310" height="150" rx="12" fill="#1e293b" stroke="#3b82f6" />
+  <text x="450" y="150" fill="#60a5fa" font-family="system-ui, sans-serif" font-weight="bold" font-size="14">Edge-Node-Frankfurt-02</text>
+  <text x="450" y="180" fill="#94a3b8" font-family="monospace" font-size="12">RTT: 28.6ms | Loss: 0.0%</text>
+  <text x="450" y="205" fill="#94a3b8" font-family="monospace" font-size="12">CPU: 38% | RAM: 2.3GB/8GB</text>
+  <text x="450" y="235" fill="#10b981" font-family="system-ui, sans-serif" font-weight="bold" font-size="12">● HEALTHY - 99.98% Uptime</text>
+
+  <rect x="770" y="120" width="330" height="150" rx="12" fill="#1e293b" stroke="#6366f1" />
+  <text x="790" y="150" fill="#a5b4fc" font-family="system-ui, sans-serif" font-weight="bold" font-size="14">Core-Gateway-Jakarta-01</text>
+  <text x="790" y="180" fill="#94a3b8" font-family="monospace" font-size="12">RTT: 4.1ms | Loss: 0.0%</text>
+  <text x="790" y="205" fill="#94a3b8" font-family="monospace" font-size="12">Throughput: 1.84 Gbps</text>
+  <text x="790" y="235" fill="#10b981" font-family="system-ui, sans-serif" font-weight="bold" font-size="12">● MASTER CONTROLLER ACTIVE</text>
+
+  <!-- Live Chart -->
+  <rect x="90" y="300" width="1010" height="320" rx="12" fill="#1e293b" stroke="#334155" />
+  <text x="120" y="335" fill="#f8fafc" font-family="system-ui, sans-serif" font-weight="bold" font-size="15">Live WebSocket RTT Latency Jitter (Last 60 Minutes)</text>
+  <path d="M 120 540 Q 250 510, 380 525 T 600 480 T 800 500 T 1050 470" fill="none" stroke="#38bdf8" stroke-width="3" />
+  <path d="M 120 570 Q 250 560, 380 550 T 600 530 T 800 520 T 1050 510" fill="none" stroke="#818cf8" stroke-width="2" stroke-dasharray="4,4" />
+  <text x="120" y="600" fill="#64748b" font-family="monospace" font-size="11">Data streaming via Go Daemon over WSS with Sub-5ms Jitter</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dm-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#dm-bg)" />
+  <rect x="60" y="50" width="1080" height="600" rx="16" fill="#0f172a" stroke="#0284c7" stroke-width="1.5" />
+  <text x="100" y="95" fill="#38bdf8" font-family="system-ui, sans-serif" font-weight="bold" font-size="16">📊 DevMetrics Cloud Audit &amp; Web Vitals</text>
+
+  <!-- Metric Badges -->
+  <rect x="100" y="140" width="220" height="120" rx="12" fill="#1e293b" stroke="#10b981" />
+  <text x="120" y="175" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Performance Score</text>
+  <text x="120" y="215" fill="#10b981" font-family="system-ui, sans-serif" font-weight="bold" font-size="32">100</text>
+  <text x="120" y="240" fill="#10b981" font-family="system-ui, sans-serif" font-size="11">✓ Perfect score</text>
+
+  <rect x="350" y="140" width="220" height="120" rx="12" fill="#1e293b" stroke="#10b981" />
+  <text x="370" y="175" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Accessibility Score</text>
+  <text x="370" y="215" fill="#10b981" font-family="system-ui, sans-serif" font-weight="bold" font-size="32">98</text>
+  <text x="370" y="240" fill="#10b981" font-family="system-ui, sans-serif" font-size="11">✓ WCAG AA compliant</text>
+
+  <rect x="600" y="140" width="220" height="120" rx="12" fill="#1e293b" stroke="#10b981" />
+  <text x="620" y="175" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Best Practices</text>
+  <text x="620" y="215" fill="#10b981" font-family="system-ui, sans-serif" font-weight="bold" font-size="32">100</text>
+  <text x="620" y="240" fill="#10b981" font-family="system-ui, sans-serif" font-size="11">✓ Modern standards</text>
+
+  <rect x="850" y="140" width="250" height="120" rx="12" fill="#1e293b" stroke="#10b981" />
+  <text x="870" y="175" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">SEO Score</text>
+  <text x="870" y="215" fill="#10b981" font-family="system-ui, sans-serif" font-weight="bold" font-size="32">100</text>
+  <text x="870" y="240" fill="#10b981" font-family="system-ui, sans-serif" font-size="11">✓ Fully indexable</text>
+
+  <!-- PR Audit Card -->
+  <rect x="100" y="290" width="1000" height="320" rx="12" fill="#1e293b" stroke="#334155" />
+  <text x="130" y="330" fill="#f8fafc" font-family="system-ui, sans-serif" font-weight="bold" font-size="15">Pull Request Automated Lighthouse Audit Report</text>
+  <rect x="130" y="350" width="940" height="230" rx="8" fill="#0f172a" />
+  <text x="150" y="385" fill="#38bdf8" font-family="monospace" font-size="13">🤖 github-actions[bot] commented on PR #142: "Feat: Add dynamic SSR caching"</text>
+  <text x="150" y="420" fill="#10b981" font-family="monospace" font-size="12">🟢 LCP: 0.62s (-0.4s improvement)</text>
+  <text x="150" y="450" fill="#10b981" font-family="monospace" font-size="12">🟢 CLS: 0.001 (Zero layout shifts)</text>
+  <text x="150" y="480" fill="#10b981" font-family="monospace" font-size="12">🟢 Total Blocking Time: 12ms</text>
+  <text x="150" y="520" fill="#94a3b8" font-family="monospace" font-size="12">Verdict: READY TO MERGE — Passed all 14 Core Web Vitals automated checks.</text>
+</svg>
