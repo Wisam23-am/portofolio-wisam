@@ -1413,11 +1413,16 @@
   }
   .world-experience {
     inset: 80px 0 123px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 19px;
   }
   .world-intro {
-    top: 19px;
+    position: relative;
+    top: auto;
     left: 23px;
     width: calc(100% - 46px);
+    flex-shrink: 0;
   }
   .world-intro .eyebrow {
     font-size: 7px;
@@ -1454,18 +1459,19 @@
     font-size: 7px;
   }
   .intro-link {
-    position: absolute;
-    top: 120px;
-    right: 0;
-    font-size: 9px !important;
+    position: static;
+    width: fit-content;
+    min-height: 44px;
+    font-size: 11px !important;
     gap: 10px;
-    margin: 0;
+    margin: 12px 0 0;
   }
   .world-canvas {
-    left: 0;
-    right: 0;
-    top: 150px;
-    bottom: -12px;
+    position: relative;
+    inset: auto;
+    width: 100%;
+    flex: 1;
+    min-height: 0;
   }
   .world-coordinate {
     display: none;
@@ -1697,12 +1703,6 @@
   }
   .world-header {
     padding: 0 16px;
-  }
-  .world-canvas {
-    top: 145px;
-  }
-  .intro-link {
-    top: 130px;
   }
   .world-intro {
     left: 20px;
