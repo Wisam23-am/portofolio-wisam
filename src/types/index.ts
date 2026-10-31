@@ -58,6 +58,7 @@ export interface ProfileInfo {
   github: string;
   linkedin: string;
   resumeUrl: string;
+  avatarUrl?: string;
   stats: {
     label: string;
     value: string;

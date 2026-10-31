@@ -1,27 +1,28 @@
 import { ProfileInfo } from '@/types';
 
 export const profileData: ProfileInfo = {
-  name: 'Wisam',
-  role: 'Full-Stack Developer & Systems Engineer',
-  tagline: 'Engineering resilient web applications, distributed systems, and scalable digital infrastructure.',
+  name: 'Aqila Wisam Madani Ma\'murri',
+  role: 'Full-Stack & Mobile Developer',
+  tagline: 'Mahasiswa D4 Teknik Informatika PENS dengan keahlian praktis dalam pengembangan aplikasi web dan mobile.',
   shortBio:
-    'Passionate IT professional with deep roots in full-stack web development, network engineering, and systems architecture. I build performant digital tools with thoughtful UI/UX and rock-solid reliability.',
+    'Mahasiswa D4 Teknik Informatika di Politeknik Elektronika Negeri Surabaya (PENS) dengan keahlian praktis dalam pengembangan aplikasi web dan mobile. Berpengalaman membangun sistem modern berbasis Flutter, React, Next.js, dan ASP.NET.',
   fullBio: [
-    'With a strong background bridging software engineering and systems administration, I focus on building high-performance web and mobile platforms that deliver real-world impact.',
-    'Over the years, I have architected and deployed community healthcare monitoring apps, automated telemetry systems, enterprise portals, and secure cloud pipelines. I care deeply about clean code, performance optimization, and accessibility.',
-    'When not coding, I experiment with homelabs, Linux kernel tuning, IoT mesh networks, and contributing to open-source software.'
+    'Mahasiswa D4 Teknik Informatika di Politeknik Elektronika Negeri Surabaya (PENS) dengan keahlian praktis dalam pengembangan aplikasi web dan mobile.',
+    'Berpengalaman membangun sistem yang komprehensif menggunakan ekosistem modern seperti Flutter, React, Next.js, dan ASP.NET. Memiliki ketertarikan kuat pada eksplorasi Kecerdasan Buatan (AI) dan penerapannya dalam arsitektur perangkat lunak untuk menciptakan solusi teknologi yang efisien, inovatif, dan berdampak pada pengguna.',
+    'Aktif mengembangkan sistem digital nyata, termasuk platform manajemen cuti enterprise DayOff (Flutter Melos & React 19), pemantauan pasien TBC (TBConnect), analisis nutrisi cerdas berbasis AI (EatWise), dan GIS Cafe Finder (NongkrongYuk!).'
   ],
-  location: 'Indonesia / Remote Worldwide',
+  location: 'Surabaya, Jawa Timur, Indonesia',
   timezone: 'UTC+7 (WIB)',
-  availability: 'Open for Full-time Roles & High-impact Contracts',
-  email: 'wisam.dev@example.com',
-  github: 'https://github.com/wisam',
-  linkedin: 'https://linkedin.com/in/wisam-dev',
+  availability: 'Open for Internship, Full-time Roles & High-impact Collaborations',
+  email: 'aqilamadani23@gmail.com',
+  github: 'https://github.com/Wisam23-am',
+  linkedin: 'https://www.linkedin.com/in/aqila-wisam-860100337/',
   resumeUrl: '/cv.pdf',
+  avatarUrl: '/images/avatar.svg',
   stats: [
-    { label: 'Years Experience', value: '4+', subtext: 'In Tech & Development' },
-    { label: 'Projects Shipped', value: '18+', subtext: 'Production & Open Source' },
-    { label: 'Uptime & Reliability', value: '99.9%', subtext: 'On Deployed Systems' },
-    { label: 'Tech Stack Breadth', value: '25+', subtext: 'Tools, Frameworks & Infra' },
+    { label: 'GPA / IPK', value: '3.53', subtext: 'D4 Teknik Informatika PENS' },
+    { label: 'Featured Projects', value: '5+', subtext: 'Web, Mobile, & AI Systems' },
+    { label: 'Modern Tech Stacks', value: '12+', subtext: 'Flutter, React, .NET, Supabase' },
+    { label: 'Active Status', value: 'Open', subtext: 'Internship & Junior Developer' },
   ],
 };

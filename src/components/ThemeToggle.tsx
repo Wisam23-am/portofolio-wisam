@@ -1,16 +1,18 @@
-'use client';
+"use client";
 
-import * as React from 'react';
-import { useTheme } from 'next-themes';
-import { Sun, Moon, Monitor } from 'lucide-react';
+import * as React from "react";
+import { useTheme } from "next-themes";
+import { Sun, Moon, Monitor } from "lucide-react";
+
+const subscribe = () => () => {};
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = React.useState(false);
-
-  React.useEffect(() => {
-    setMounted(true);
-  }, []);
+  const mounted = React.useSyncExternalStore(
+    subscribe,
+    () => true,
+    () => false,
+  );
 
   if (!mounted) {
     return (
@@ -19,9 +21,9 @@ export function ThemeToggle() {
   }
 
   const cycleTheme = () => {
-    if (theme === 'dark') setTheme('light');
-    else if (theme === 'light') setTheme('system');
-    else setTheme('dark');
+    if (theme === "dark") setTheme("light");
+    else if (theme === "light") setTheme("system");
+    else setTheme("dark");
   };
 
   return (
@@ -32,9 +34,9 @@ export function ThemeToggle() {
       aria-label={`Current theme: ${theme}. Click to switch theme.`}
       title={`Theme: ${theme} (Click to toggle)`}
     >
-      {theme === 'dark' && <Moon className="w-4 h-4 text-emerald-400" />}
-      {theme === 'light' && <Sun className="w-4 h-4 text-amber-500" />}
-      {theme === 'system' && <Monitor className="w-4 h-4 text-blue-400" />}
+      {theme === "dark" && <Moon className="w-4 h-4 text-emerald-400" />}
+      {theme === "light" && <Sun className="w-4 h-4 text-amber-500" />}
+      {theme === "system" && <Monitor className="w-4 h-4 text-blue-400" />}
     </button>
   );
 }
