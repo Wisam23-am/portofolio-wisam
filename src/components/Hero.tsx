@@ -118,7 +118,7 @@ export function Hero() {
             <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden border-2 border-emerald-500/30 dark:border-emerald-500/40 p-2 bg-gradient-to-b from-neutral-100 to-neutral-200 dark:from-neutral-900 dark:to-neutral-950 shadow-2xl">
               <div className="relative w-full h-full rounded-xl overflow-hidden bg-neutral-900 flex items-center justify-center">
                 <Image
-                  src="/images/avatar.svg"
+                  src={profileData.avatarUrl || "/images/avatar.svg"}
                   alt={`${profileData.name} - Profile`}
                   fill
                   priority

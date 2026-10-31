@@ -1,117 +1,52 @@
-# Wisam — Developer Portfolio Website
+# Dunia Wisam
 
-A modern, high-performance developer portfolio website built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**, designed in accordance with the [portfolio-prd.md](file:///C:/kerja/portofolio/portfolio-prd.md) requirements.
+Portofolio 3D Aqila Wisam Madani Ma’murri, dibangun dalam repository Next.js yang sama agar koneksi GitHub–Vercel tetap bisa digunakan.
 
----
+## Menjalankan
 
-## 🚀 Key Features
-
-- **⚡ Fast & Modern Architecture:** Built on Next.js App Router with 100% static HTML generation (SSG) for sub-second page loads.
-- **🎨 Dark & Light Mode:** Seamless theme toggle with local storage persistence and system preference detection via `next-themes`.
-- **📁 Content-Driven Architecture:** All profile, skills, experience, and project case studies live in typed data files under [`src/data/`](file:///C:/kerja/portofolio/src/data/) — add or update projects in under 5 minutes without touching UI components.
-- **📱 Responsive & Accessible:** Fully mobile-first design with accessible ARIA semantics, WCAG AA contrast ratios, and keyboard navigation.
-- **🔍 Full Project Gallery & Filter:** Search by keywords and filter projects dynamically by category (*Full Stack*, *Mobile App*, *DevOps & Systems*, *Cloud & API*) and technology tags.
-- **📄 In-Depth Case Studies:** Dedicated multi-page URLs for every project (`/projects/[slug]`) featuring problem statements, technical solutions, architecture breakdowns, quantifiable metrics, and UI mockups.
-- **📬 Interactive Contact Form:** Support for free third-party form services (Web3Forms / Formspree) with client-side feedback and validation.
-- **🌐 Built-in SEO:** Automatic Open Graph tags, Twitter cards, dynamic `sitemap.xml`, and `robots.txt`.
-
----
-
-## 🛠️ Tech Stack
-
-- **Framework:** [Next.js](https://nextjs.org/) (App Router, Turbopack, React 19)
-- **Language:** [TypeScript](https://www.typescriptlang.org/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Icons:** [Lucide React](https://lucide.dev/) & Custom SVG Brand Icons
-- **Theme:** [next-themes](https://github.com/pacocoursey/next-themes)
-
----
-
-## 📂 Project Structure
-
-```text
-├── public/
-│   ├── images/
-│   │   ├── avatar.svg            # Profile avatar image
-│   │   ├── og-image.svg          # OpenGraph card preview
-│   │   └── projects/             # Project mockup diagrams and previews
-│   └── cv.pdf                    # Downloadable resume PDF
-├── src/
-│   ├── app/
-│   │   ├── layout.tsx            # Global layout with ThemeProvider, Nav & Footer
-│   │   ├── page.tsx              # Home landing page (Hero, About, Timeline, Skills, Projects, Contact)
-│   │   ├── globals.css           # Tailwind CSS variables & themes
-│   │   ├── not-found.tsx         # Custom 404 page
-│   │   ├── robots.ts             # Dynamic robots.txt
-│   │   ├── sitemap.ts            # Dynamic sitemap.xml generator
-│   │   └── projects/
-│   │       ├── page.tsx          # Filterable project gallery
-│   │       └── [slug]/page.tsx   # Individual project detail case study page
-│   ├── components/
-│   │   ├── Navbar.tsx            # Sticky header with navigation & theme switch
-│   │   ├── Footer.tsx            # Footer with links and copyright
-│   │   ├── Hero.tsx              # Landing hero section
-│   │   ├── About.tsx             # Bio and engineering philosophies
-│   │   ├── Experience.tsx        # Career timeline & education
-│   │   ├── Skills.tsx            # Categorized skills & proficiency bars
-│   │   ├── FeaturedProjects.tsx  # Highlighted case study cards
-│   │   ├── ProjectCard.tsx       # Reusable project card
-│   │   ├── ProjectGallery.tsx    # Filter and search engine for projects
-│   │   ├── Contact.tsx           # Contact form and direct links
-│   │   ├── ThemeToggle.tsx       # Light/Dark/System theme switcher
-│   │   └── icons/BrandIcons.tsx  # GitHub & LinkedIn SVG icons
-│   ├── data/
-│   │   ├── profile.ts            # Bio, social links, location, status
-│   │   ├── projects.ts           # All project entries & case studies
-│   │   ├── skills.ts             # Categorized technical skills
-│   │   └── experience.ts         # Career timeline entries
-│   └── types/
-│       └── index.ts              # TypeScript interfaces
-```
-
----
-
-## 🏃 Getting Started
-
-### 1. Install Dependencies
 ```bash
-npm install
-```
-
-### 2. Run the Development Server
-```bash
+npm ci
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
+Buka `http://localhost:3000` untuk memulai dengan tampilan 3D. Tombol Versi sederhana membuka tampilan 2D hanya untuk kunjungan saat itu; membuka ulang halaman utama akan kembali ke 3D. Gunakan `/?mode=2d` untuk tautan langsung ke versi sederhana, atau `/#achievement` untuk membuka zona tertentu. Fallback aksesibilitas dan perangkat tetap berlaku.
 
-### 3. Build for Production
+## Interaksi
+
+- Klik bangunan, label, menu, atau peta untuk berjalan ke sebuah zona. Panel terbuka saat karakter tiba.
+- Tujuan dapat diganti saat berjalan. Rute mengikuti jalan melingkar di plaza.
+- Tutup panel dengan tombol tutup, Escape, atau klik di luar panel. Panah kiri/kanan memilih zona sebelumnya/berikutnya. Di ponsel, pegangan panel dapat digeser turun.
+- Tombol +/− mengatur ukuran dunia; tombol reset mengembalikan ukuran awal. Tombol bulan/matahari mengganti suasana.
+- Versi sederhana menyajikan seluruh konten yang sama, termasuk saat JavaScript tidak aktif. Reduced motion dan perangkat dengan memori sangat terbatas memakai versi sederhana secara default; kegagalan WebGL juga mengaktifkan fallback.
+- Tidak ada backend, API key, database, atau model 3D dari CDN. Bangunan dan avatar dibuat dari geometri di dalam proyek.
+
+## Mengubah konten
+
+- `src/content/portfolio.ts`: profil, pendidikan, organisasi, pencapaian, skill, pengalaman DayOff, dan empat proyek dari resume.
+- `src/content/zones.ts`: label, warna, dan posisi kelima zona.
+- `public/cv-aqila-wisam.docx`: file resume asli untuk tombol Unduh CV.
+- `public/images/wisam-foto.jpg`: foto pemilik untuk logo, profil, dan ikon situs.
+- `src/components/portfolio/portfolio.css`: tampilan desktop, ponsel, dan versi sederhana.
+- `src/components/portfolio/World.tsx`: pulau, bangunan, karakter, animasi, pencahayaan, dan kamera.
+- `src/lib/navigation.ts`: graf waypoint dan pencarian rute A*.
+- `src/store/portfolio.ts`: navigasi, panel, dan mode tampilan.
+
+Konten baru bersumber dari resume yang diberikan. File data dan komponen lama tetap tersedia di repository, tetapi halaman utama menggunakan komponen portofolio baru. URL `/projects` dan `/projects/[slug]` diarahkan ke bagian proyek pada versi sederhana.
+
+## Validasi
+
 ```bash
+npm run lint
+npm test
 npm run build
 ```
 
----
+Pengujian memeriksa semua pasangan zona, jarak perjalanan, jalur terhadap bangunan, penggantian tujuan, reduced motion, dan pemulihan dari kegagalan grafik. Angka Lighthouse atau FPS belum merupakan jaminan.
 
-## 📝 How to Update Portfolio Content
+## Deployment Vercel
 
-To update the website content, edit the files in [`src/data/`](file:///C:/kerja/portofolio/src/data/):
-- **Profile & Bio:** Edit [`src/data/profile.ts`](file:///C:/kerja/portofolio/src/data/profile.ts)
-- **Projects & Case Studies:** Edit [`src/data/projects.ts`](file:///C:/kerja/portofolio/src/data/projects.ts)
-- **Skills & Proficiency:** Edit [`src/data/skills.ts`](file:///C:/kerja/portofolio/src/data/skills.ts)
-- **Work History:** Edit [`src/data/experience.ts`](file:///C:/kerja/portofolio/src/data/experience.ts)
+Tetap gunakan repository, proyek Vercel, dan root directory yang saat ini terhubung. Framework tetap Next.js; perintah build `npm run build`; output directory mengikuti pengaturan default Next.js. Migrasi ke Vite tidak diperlukan untuk pengalaman 3D ini.
 
----
+Commit dan push ke branch yang dikonfigurasi sebagai Production Branch di Vercel akan memicu deployment sesuai integrasi yang sudah ada. Push branch lain dapat membuat Preview Deployment bila fitur itu diaktifkan. Periksa preview sebelum menggabungkan perubahan ke production.
 
-## ☁️ Free Deployment ($0/month)
-
-### Deploy to Vercel
-1. Push the code to a GitHub repository.
-2. Go to [Vercel](https://vercel.com/) and click **"Add New Project"**.
-3. Import the repository — Next.js settings are detected automatically.
-4. Click **Deploy**.
-
-### Deploy to Cloudflare Pages
-1. Push the code to GitHub.
-2. In Cloudflare Dashboard, navigate to **Compute (Workers) > Pages > Connect to Git**.
-3. Framework preset: **Next.js**.
-4. Build command: `npm run build`.
+Gunakan Node.js 22.12+ atau 24 untuk pengembangan dan pengujian. Build produksi memakai Webpack bawaan Next.js karena worker Turbopack untuk React Compiler gagal pada lingkungan Windows yang digunakan saat implementasi. Hosting tetap menggunakan Next.js seperti sebelumnya. Atribusi pustaka tersedia di `CREDITS.md`.

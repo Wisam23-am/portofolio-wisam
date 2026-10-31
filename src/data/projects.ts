@@ -4,265 +4,163 @@ export const projectsData: Project[] = [
   {
     id: 'tbconnect',
     slug: 'tbconnect',
-    title: 'TBConnect Health Portal',
-    summary: 'TB patient monitoring and community health worker offline-first mobile & web platform.',
+    title: 'TBConnect',
+    summary: 'Aplikasi kesehatan mobile (Flutter) yang memfasilitasi pelacakan dan pemantauan kondisi pasien TBC.',
     description:
-      'TBConnect is a healthcare intervention platform designed to help community health workers (CHWs) track patient medication adherence, log diagnostic sputum tests, and visualize regional patient outcomes. Built with an offline-first architecture to ensure smooth usability even in rural clinics with spotty connectivity.',
-    role: 'Lead Full-Stack & Mobile Developer',
-    period: '2025 — 2026',
-    techStack: ['Flutter', 'Supabase', 'PostgreSQL', 'Next.js', 'Tailwind CSS', 'TypeScript'],
+      'TBConnect adalah aplikasi kesehatan mobile berbasis Flutter yang dirancang untuk memfasilitasi pemantauan dan pelacakan kondisi pasien Tuberkulosis (TBC). Aplikasi ini membantu tenaga kesehatan dan pasien dalam mencatat kepatuhan minum obat harian, jadwal pemeriksaan berkala, serta rekapitulasi data kesehatan dengan arsitektur yang tangguh dan mudah digunakan di lapangan.',
+    role: 'Mobile Developer (Flutter)',
+    period: '2026',
+    techStack: ['Flutter', 'Dart', 'Supabase', 'PostgreSQL', 'REST API', 'Tailwind CSS'],
     category: 'Mobile App',
     images: [
       '/images/projects/tbconnect-1.svg',
       '/images/projects/tbconnect-2.svg',
       '/images/projects/tbconnect-3.svg',
     ],
-    liveUrl: 'https://tbconnect-demo.vercel.app',
-    repoUrl: 'https://github.com/wisam/tbconnect',
+    repoUrl: 'https://github.com/Wisam23-am/TBConnect.git',
     featured: true,
     problem:
-      'In many community health centers, TB medication adherence is manually tracked on paper logs. Lost records and delayed follow-ups directly lead to multidrug-resistant tuberculosis (MDR-TB) outbreaks.',
+      'Pengobatan TBC membutuhkan kepatuhan konsumsi obat secara ketat setiap hari selama berbulan-bulan. Pemantauan manual sering menimbulkan risiko dosis terlewat dan minimnya visibilitas bagi tenaga kesehatan komunitas.',
     solution:
-      'Created a cross-platform mobile app with local SQLite caching that syncs seamlessly with a Supabase PostgreSQL backend when network becomes available. Combined with a real-time web portal for medical supervisors.',
+      'Membangun aplikasi mobile Flutter yang menyediakan checklist kepatuhan minum obat, notifikasi pengingat, dan sinkronisasi data pemantauan pasien secara terstruktur.',
     features: [
-      'Offline-first patient check-in and medication logging with conflict-free background synchronization.',
-      'Automated SMS / push notification adherence reminders for patients and care workers.',
-      'Comprehensive supervisory dashboard with interactive geospatial heatmaps of active treatment cohorts.',
-      'Role-based access control (RBAC) ensuring patient medical confidentiality compliant with health privacy norms.',
-      'One-click PDF / Excel compliance report generation for public health agencies.'
+      'Pelacakan kepatuhan minum obat harian pasien TBC.',
+      'Direktori dan pemantauan progres pasien untuk kader/tenaga kesehatan.',
+      'Notifikasi pengingat konsumsi obat harian dan jadwal kontrol ke puskesmas/klinik.',
+      'Penyimpanan data aman dan sinkronisasi cloud terpusat.'
     ],
     architecture: [
-      'Frontend: Flutter for cross-platform mobile client (iOS/Android) and Next.js 15 for administrative dashboard.',
-      'Backend: Supabase Edge Functions with Row Level Security (RLS) on PostgreSQL.',
-      'Storage & Sync: Local SQLite with delta sync queue and automated retry backoff.',
-      'Hosting: Vercel for web dashboard, Supabase managed cloud database.'
+      'Frontend: Flutter untuk antarmuka mobile cross-platform Android & iOS.',
+      'Backend & DB: Supabase PostgreSQL dengan Row Level Security.'
     ],
     challenges: [
-      'Designing a conflict resolution mechanism for offline field updates when multiple CHWs update the same patient registry.',
-      'Optimizing Flutter bundle size and memory consumption for entry-level Android devices used by field staff.'
+      'Memastikan alur aplikasi sederhana dan ramah bagi pasien dari berbagai kelompok usia.',
+      'Mengelola sinkronisasi data yang konsisten saat koneksi seluler tidak stabil.'
     ],
     metrics: [
-      { label: 'Patient Adherence Rate', value: '+34%' },
-      { label: 'Sync Latency', value: '< 400ms' },
-      { label: 'Field Staff User Rating', value: '4.8 / 5.0' },
-      { label: 'Active Monitored Cases', value: '1,200+' }
+      { label: 'Framework', value: 'Flutter' },
+      { label: 'Role', value: 'Mobile Dev' },
+      { label: 'Status', value: 'Active' }
     ]
   },
   {
-    id: 'netpulse-monitor',
-    slug: 'netpulse-monitor',
-    title: 'NetPulse Network Telemetry',
-    summary: 'High-throughput real-time network latency, packet loss, and server telemetry dashboard.',
+    id: 'eatwise',
+    slug: 'eatwise',
+    title: 'EatWise — Food & Nutrition Analysis',
+    summary: 'Food Scanner cerdas berbasis AI Gemini Flash dan Food Facts API untuk analisis nilai gizi otomatis.',
     description:
-      'A distributed network observability platform engineered to monitor multi-node homelabs and remote cloud infrastructure. Features sub-second telemetry aggregation, automated alert notifications via Discord/Telegram webhooks, and live throughput charts.',
-    role: 'Systems & Backend Engineer',
+      'EatWise adalah aplikasi analisis nutrisi yang mengimplementasikan fitur Food Scanner cerdas dengan mengintegrasikan model AI Google Gemini Flash dan API Open Food Facts. Pengguna dapat mendeteksi makanan dari foto kamera untuk secara otomatis mengekstrak informasi nilai gizi (kalori, protein, lemak, karbohidrat) secara instan dan akurat.',
+    role: 'Full-Stack & AI Developer',
     period: '2025',
-    techStack: ['Go (Golang)', 'React', 'TypeScript', 'WebSockets', 'Tailwind CSS', 'Docker', 'Prometheus'],
-    category: 'DevOps & Systems',
+    techStack: ['Google Gemini Flash', 'Flutter', 'Open Food Facts API', 'TypeScript', 'Node.js', 'Tailwind CSS'],
+    category: 'Mobile App',
     images: [
-      '/images/projects/netpulse-1.svg',
-      '/images/projects/netpulse-2.svg',
+      '/images/projects/eatwise-1.svg',
     ],
-    liveUrl: 'https://netpulse-telemetry.pages.dev',
-    repoUrl: 'https://github.com/wisam/netpulse-monitor',
+    repoUrl: 'https://github.com/Wisam23-am/EatWise.git',
     featured: true,
     problem:
-      'Standard server monitoring suites are often resource-heavy, complex to configure for small-to-medium clusters, or require costly cloud subscriptions.',
+      'Pencatatan kalori dan nutrisi manual sering terasa rumit, lambat, dan menyulitkan pengguna yang ingin menjaga pola makan sehat secara konsisten.',
     solution:
-      'Engineered a lightweight Go agent (< 15MB RAM) that pushes ICMP, HTTP probe, and CPU/RAM metrics over encrypted WebSockets to a centralized Next.js/React dashboard with zero external dependencies.',
+      'Mengintegrasikan model AI visual Gemini Flash dan database Open Food Facts untuk menganalisis foto makanan secara otomatis tanpa input teks manual.',
     features: [
-      'Sub-500ms real-time metric streaming via persistent WebSockets.',
-      'Configurable threshold alerting with webhook integrations (Slack, Discord, Telegram, Email).',
-      'Historical latency graphs with 30-day retention and aggregate percentiles (p50, p95, p99).',
-      'Docker Compose one-line deployment for edge nodes and control planes.'
+      'Food scanner cerdas berbasis pengenalan visual model AI Google Gemini Flash.',
+      'Ekstraksi otomatis informasi nilai gizi: kalori, karbohidrat, protein, lemak, dan serat.',
+      'Integrasi barcode scanner menggunakan database produk Open Food Facts.',
+      'Dasbor rekapitulasi target nutrisi harian pengguna.'
     ],
     architecture: [
-      'Agent: Go daemon compiled for Linux (ARM64/x86_64) using raw sockets for ICMP probes.',
-      'Server: Go HTTP/WebSocket hub with in-memory ring buffers and optional SQLite archival.',
-      'Client: React + Tailwind CSS with Canvas-based 60fps streaming time-series graphs.'
+      'Mobile Client: Flutter dengan integrasi kamera dan rendering visual nutrisi.',
+      'AI Layer: Google Gemini Flash Multimodal API dengan structured output schema.',
+      'Database: Open Food Facts REST API.'
     ],
     challenges: [
-      'Preventing UI rendering bottlenecks when consuming 100+ telemetry events per second across 20 monitored nodes.',
-      'Cross-compiling CGO-free Go binaries for minimal Alpine Linux and embedded routers.'
+      'Mendesain prompt AI vision yang akurat untuk mengenali variasi masakan lokal dan porsi makanan.',
+      'Menjaga latensi deteksi tetap rendah di bawah 2 detik per gambar.'
     ],
     metrics: [
-      { label: 'Agent Memory Footprint', value: '< 12MB' },
-      { label: 'Telemetry Jitter', value: '< 5ms' },
-      { label: 'Max Monitored Targets', value: '500+' },
-      { label: 'Uptime Reliability', value: '99.99%' }
+      { label: 'AI Model', value: 'Gemini Flash' },
+      { label: 'API Partner', value: 'Food Facts' },
+      { label: 'Inference', value: '< 2s' }
     ]
   },
   {
-    id: 'cloudvault-core',
-    slug: 'cloudvault-core',
-    title: 'CloudVault Encrypted Storage',
-    summary: 'Zero-knowledge client-side encrypted object storage and secure file sharing API.',
+    id: 'nongkrongyuk',
+    slug: 'nongkrongyuk',
+    title: 'NongkrongYuk! — GIS Cafe Finder',
+    summary: 'Sistem Informasi Geografis (GIS) berbasis web untuk pemetaan dan pencarian kafe di Surabaya.',
     description:
-      'CloudVault is a privacy-first cloud storage solution utilizing client-side AES-GCM-256 encryption. Files are chunked and encrypted in the browser before being streamed to S3-compatible bucket backends, ensuring the host server never sees plaintext data.',
-    role: 'Full-Stack Developer & Security Lead',
-    period: '2024 — 2025',
-    techStack: ['Next.js', 'TypeScript', 'Web Crypto API', 'Node.js', 'PostgreSQL', 'Tailwind CSS', 'AWS S3'],
-    category: 'Cloud & API',
-    images: [
-      '/images/projects/cloudvault-1.svg',
-      '/images/projects/cloudvault-2.svg',
-    ],
-    liveUrl: 'https://cloudvault-secure.vercel.app',
-    repoUrl: 'https://github.com/wisam/cloudvault-core',
-    featured: true,
-    problem:
-      'Most cloud storage providers have access to unencrypted user files on their disks, creating vulnerability risks for sensitive credentials, configuration backups, and private data.',
-    solution:
-      'Developed a zero-knowledge web application where master keys are derived via PBKDF2 in the browser and files are encrypted with unique initialization vectors prior to multipart upload.',
-    features: [
-      'Client-side AES-GCM 256-bit encryption before upload leaves browser.',
-      'Time-expiring, password-protected shareable download links with download count limits.',
-      'Chunked streaming upload handling files up to 2GB smoothly without freezing the UI.',
-      'Zero-knowledge architecture: server only stores ciphertext and cryptographically hashed auth tokens.'
-    ],
-    architecture: [
-      'Frontend: Next.js App Router with Web Crypto API and Web Workers for multithreaded encryption.',
-      'Storage: S3-compatible object storage with presigned encrypted upload URLs.',
-      'Database: PostgreSQL with Prisma ORM for metadata and sharing link tokens.'
-    ],
-    challenges: [
-      'Executing multi-gigabyte cryptographic operations in JavaScript without blocking the main rendering thread (solved with Web Workers).',
-      'Implementing resumable multipart upload for large encrypted blobs.'
-    ],
-    metrics: [
-      { label: 'Encryption Standard', value: 'AES-256-GCM' },
-      { label: 'Client Throughput', value: '85 MB/s' },
-      { label: 'Zero Knowledge Guarantee', value: '100%' },
-      { label: 'Files Secured', value: '50k+' }
-    ]
-  },
-  {
-    id: 'omnitask-flow',
-    slug: 'omnitask-flow',
-    title: 'OmniTask Collaborative Workspace',
-    summary: 'High-performance team project manager with real-time Kanban boards and markdown docs.',
-    description:
-      'A sleek, keyboard-first team collaboration workspace combining Kanban boards, sprint backlogs, and nested markdown documentation. Designed for speed, featuring instant optimistic UI updates and live multi-cursor presence.',
-    role: 'Full-Stack Engineer',
-    period: '2024',
-    techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Prisma', 'PostgreSQL'],
+      'NongkrongYuk! adalah Sistem Informasi Geografis (GIS) berbasis web yang dibangun untuk memfasilitasi pemetaan dan pencarian kafe di kawasan Surabaya. Aplikasi ini memungkinkan pengguna mencari tempat nongkrong, belajar, atau bekerja berdasarkan lokasi interaktif, fasilitas WiFi, colokan listrik, serta suasana kafe.',
+    role: 'Frontend & GIS Developer',
+    period: '2026',
+    techStack: ['React', 'TypeScript', 'Leaflet / GIS', 'Tailwind CSS', 'Vite', 'REST API'],
     category: 'Full Stack',
     images: [
-      '/images/projects/omnitask-1.svg',
-      '/images/projects/omnitask-2.svg',
+      '/images/projects/nongkrongyuk-1.svg',
     ],
-    liveUrl: 'https://omnitask-flow.vercel.app',
-    repoUrl: 'https://github.com/wisam/omnitask-flow',
-    featured: false,
+    repoUrl: 'https://github.com/zuzustack/nongkrongyuk-frontend.git',
+    featured: true,
     problem:
-      'Existing task management software is frequently bloated, slow to load, and lacks integrated technical documentation capabilities for software teams.',
+      'Masyarakat dan mahasiswa di Surabaya sering kesulitan menemukan kafe yang sesuai dengan kebutuhan spesifik seperti ketersediaan colokan dan kenyamanan bekerja (WFC).',
     solution:
-      'Built a streamlined Next.js application with optimistic mutation state, fuzzy global command palette (Cmd+K), and markdown documentation editor.',
+      'Membangun platform GIS interaktif dengan pemetaan koordinat spasial dan filter multi-kriteria fasilitas kafe.',
     features: [
-      'Drag-and-drop Kanban boards with custom columns, filters, and priority tags.',
-      'Rich-text & Markdown workspace with slash commands (/heading, /code, /checklist).',
-      'Global keyboard shortcuts & Command Palette for swift navigation without touching the mouse.',
-      'Activity audit logs and team permission levels (Admin, Member, Viewer).'
+      'Peta spasial interaktif kafe Surabaya dengan penanda titik lokasi dan klasterisasi.',
+      'Pencarian dan filter kafe berdasarkan area, rentang harga, jam buka, dan fasilitas.',
+      'Perhitungan jarak dan rute dari lokasi pengguna ke kafe tujuan.',
+      'Tampilan profil lengkap kafe beserta ulasan dan detail fasilitas.'
     ],
     architecture: [
-      'Full-Stack Next.js 14 App Router with Server Actions and optimistic client cache.',
-      'PostgreSQL database hosted on Neon with connection pooling.',
-      'Tailwind CSS with custom glassmorphic theme tokens.'
+      'Frontend: React, TypeScript, dan Vite dengan styling Tailwind CSS.',
+      'GIS: Leaflet / OpenStreetMap untuk rendering layer peta dan data GeoJSON.'
     ],
     challenges: [
-      'Handling high-frequency drag-and-drop position sorting efficiently in PostgreSQL.',
-      'Designing an intuitive keyboard navigation system for all complex modals and lists.'
+      'Mengoptimalkan performa pemetaan saat menampilkan ratusan marker secara bersamaan di perangkat mobile.',
+      'Mengintegrasikan sistem filter multi-parameter yang reaktif dan cepat.'
     ],
     metrics: [
-      { label: 'First Contentful Paint', value: '0.8s' },
-      { label: 'Lighthouse Score', value: '98/100' },
-      { label: 'Daily Active Testers', value: '350+' }
+      { label: 'Coverage', value: 'Surabaya' },
+      { label: 'Stack', value: 'React + GIS' },
+      { label: 'Map Engine', value: 'Leaflet' }
     ]
   },
   {
-    id: 'meshguard-iot',
-    slug: 'meshguard-iot',
-    title: 'MeshGuard IoT Gateway',
-    summary: 'Secure edge gateway firmware & web console for Zigbee/ESP32 sensor networks.',
+    id: 'benkyou-shimashou',
+    slug: 'benkyou-shimashou',
+    title: 'benkyou shimashou by Wi — Japanese N5 Platform',
+    summary: 'Platform web pembelajaran bahasa Jepang N5 interaktif dengan flashcard dan tata bahasa dasar.',
     description:
-      'An embedded edge system management portal and MQTT gateway for monitoring environmental sensors, power meters, and access controls in smart facilities. Built with Linux edge services and a responsive web control center.',
-    role: 'Embedded Systems & Software Engineer',
-    period: '2023 — 2024',
-    techStack: ['Python', 'MQTT', 'Docker', 'Linux / Raspberry Pi', 'React', 'Tailwind CSS'],
-    category: 'DevOps & Systems',
+      'benkyou shimashou by Wi adalah platform web interaktif yang dirancang khusus untuk pembelajaran bahasa Jepang tingkat dasar (JLPT N5). Menyediakan lingkungan belajar yang terstruktur untuk menguasai Hiragana, Katakana, kosakata tematik, dan pola tata bahasa dasar dengan antarmuka yang bersih dan mudah diakses.',
+    role: 'Frontend Developer & UI/UX Designer',
+    period: '2026',
+    techStack: ['Next.js / React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+    category: 'Full Stack',
     images: [
-      '/images/projects/meshguard-1.svg',
-      '/images/projects/meshguard-2.svg',
+      '/images/projects/benkyou-1.svg',
     ],
-    liveUrl: 'https://meshguard-demo.pages.dev',
-    repoUrl: 'https://github.com/wisam/meshguard-iot',
-    featured: false,
+    liveUrl: 'https://benkyou-rosy.vercel.app',
+    featured: true,
     problem:
-      'Fragmented IoT sensor protocols often require proprietary hubs, exposing networks to security risks and vendor lock-in.',
+      'Mempelajari bahasa Jepang dari nol sering membingungkan pemula karena materi Hiragana, Katakana, dan tata bahasa N5 yang sering tersebar di berbagai sumber.',
     solution:
-      'Created an open-source bridge and control dashboard that normalizes MQTT sensor payloads, enforces local TLS, and provides offline fallback rules for relay actuators.',
+      'Merancang satu platform web terpadu dengan modul kartu latihan interaktif dan referensi tata bahasa yang rapi.',
     features: [
-      'Auto-discovery for MQTT and Zigbee2MQTT peripheral devices.',
-      'Visual rule engine for creating automated triggers (e.g., temperature thresholds to ventilation fans).',
-      'Real-time status indicators and network topology graph visualization.',
-      'Encrypted remote tunnel integration using WireGuard VPN.'
+      'Latihan interaktif karakter Hiragana & Katakana beserta pelafalan romaji.',
+      'Kartu hafalan kosakata N5 dengan metode drill bertahap.',
+      'Ringkasan tata bahasa dasar (bunpou) disertai contoh kalimat situasional.',
+      'Antarmuka web modern yang ringan, responsif, dan dapat diakses langsung via browser.'
     ],
     architecture: [
-      'Edge Gateway: Python/AsyncIO daemon running as a Docker container on Raspberry Pi OS.',
-      'Message Bus: Mosquitto MQTT broker with TLS client certificates.',
-      'Web Interface: React Single Page Application served directly by embedded Nginx.'
+      'Frontend: React / Next.js dengan arsitektur komponen modern.',
+      'Deployment: Vercel Edge Network untuk akses cepat global.'
     ],
     challenges: [
-      'Ensuring fail-safe execution of automated relay rules even during gateway network loss.',
-      'Constraining write operations to extend flash SD card lifespan on Raspberry Pi.'
+      'Menyusun layout kartu belajar yang nyaman dibaca baik pada layar smartphone maupun desktop.'
     ],
     metrics: [
-      { label: 'Edge Latency', value: '< 15ms' },
-      { label: 'Sensor Nodes Connected', value: '64' },
-      { label: 'System Uptime', value: '180+ Days' }
-    ]
-  },
-  {
-    id: 'devmetrics-hub',
-    slug: 'devmetrics-hub',
-    title: 'DevMetrics Cloud Audit',
-    summary: 'Automated GitHub & Cloudflare deployment audit, Lighthouse score tracker, and SLA monitor.',
-    description:
-      'A continuous quality platform that tracks website performance regressions, accessibility scores, and deployment uptime over time, providing team leads with actionable weekly audit digests.',
-    role: 'Full-Stack Developer',
-    period: '2024',
-    techStack: ['Next.js', 'TypeScript', 'Node.js', 'Tailwind CSS', 'PostgreSQL', 'GitHub API'],
-    category: 'Cloud & API',
-    images: [
-      '/images/projects/devmetrics-1.svg',
-      '/images/projects/devmetrics-2.svg',
-    ],
-    liveUrl: 'https://devmetrics-hub.vercel.app',
-    repoUrl: 'https://github.com/wisam/devmetrics-hub',
-    featured: false,
-    problem:
-      'Teams frequently push releases that unintentionally degrade web performance, Lighthouse scores, and SEO metadata without noticing until user complaints arise.',
-    solution:
-      'Built an automated webhook consumer that runs headless Lighthouse audits on every pull request deploy preview and posts formatted score comparison comments.',
-    features: [
-      'Automated PR audit bot posting Lighthouse delta scores on GitHub PRs.',
-      'Historical trend charts for Core Web Vitals (LCP, FID, CLS, INP).',
-      'Automated broken link checker and OpenGraph preview verification.',
-      'Configurable alert thresholds for performance regressions exceeding 10%.'
-    ],
-    architecture: [
-      'Next.js 14 App Router, Next.js Route Handlers for GitHub Webhooks.',
-      'Puppeteer & Chrome Headless for automated Lighthouse evaluations.',
-      'PostgreSQL for time-series audit records.'
-    ],
-    challenges: [
-      'Running headless browser audits in serverless container execution limits without timing out.',
-      'Normalizing variance in Lighthouse scores across different network test environments.'
-    ],
-    metrics: [
-      { label: 'Audit Run Time', value: '< 25s' },
-      { label: 'PRs Audited', value: '4,500+' },
-      { label: 'Performance Gain', value: '+28%' }
+      { label: 'Target Level', value: 'JLPT N5' },
+      { label: 'Platform', value: 'Web App' },
+      { label: 'Hosting', value: 'Vercel' }
     ]
   }
 ];
